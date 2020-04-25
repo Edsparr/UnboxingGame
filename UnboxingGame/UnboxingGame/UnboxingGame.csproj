@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\ActionBase.cs" />
+    <Compile Include="Actions\ExitGameAction.cs" />
+    <Compile Include="Actions\InventoryInformationAction.cs" />
+    <Compile Include="Actions\SellAction.cs" />
+    <Compile Include="Actions\UnboxCrateAction.cs" />
+    <Compile Include="Actions\WorkAction.cs" />
     <Compile Include="Crates.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Item.cs" />
@@ -50,7 +56,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage.cs" />
+    <Compile Include="GameStorage.cs" />
     <Compile Include="Work.cs" />
   </ItemGroup>
   <ItemGroup>

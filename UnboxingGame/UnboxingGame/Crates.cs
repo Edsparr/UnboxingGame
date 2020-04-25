@@ -114,22 +114,22 @@ namespace UnboxingGame
             int chance = rand.Next(1, 100);
             int crateSelect = rand.Next(1, 10);
             if (chance >= 1 && chance < 50) {
-                Item itemUnboxed = Storage.itemCommon.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemCommon.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             } else if (chance >= 50 && chance <= 80) 
             {
-                Item itemUnboxed = Storage.itemRare.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemRare.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             } else if (chance >= 80 && chance <= 95)
             {
-                Item itemUnboxed = Storage.itemEpic.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemEpic.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             } else
             {
-                Item itemUnboxed = Storage.itemMythical.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemMythical.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
@@ -144,25 +144,25 @@ namespace UnboxingGame
             int crateSelect = rand.Next(1, 10);
             if (chance >= 1 && chance < 30)
             {
-                Item itemUnboxed = Storage.itemCommon.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemCommon.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 30 && chance < 70)
             {
-                Item itemUnboxed = Storage.itemRare.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemRare.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 70 && chance < 90)
             {
-                Item itemUnboxed = Storage.itemEpic.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemEpic.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else
             {
-                Item itemUnboxed = Storage.itemMythical.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemMythical.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
@@ -177,25 +177,25 @@ namespace UnboxingGame
             int crateSelect = rand.Next(1, 10);
             if (chance >= 1 && chance < 15)
             {
-                Item itemUnboxed = Storage.itemCommon.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemCommon.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 15 && chance < 55)
             {
-                Item itemUnboxed = Storage.itemRare.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemRare.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 55 && chance < 80)
             {
-                Item itemUnboxed = Storage.itemEpic.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemEpic.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else
             {
-                Item itemUnboxed = Storage.itemMythical.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemMythical.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
@@ -209,19 +209,19 @@ namespace UnboxingGame
             int crateSelect = rand.Next(1, 10);
             if (chance >= 1 && chance < 30)
             {
-                Item itemUnboxed = Storage.itemRare.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemRare.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 30 && chance < 70)
             {
-                Item itemUnboxed = Storage.itemEpic.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemEpic.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else
             {
-                Item itemUnboxed = Storage.itemMythical.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemMythical.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
@@ -236,19 +236,19 @@ namespace UnboxingGame
             int crateSelect = rand.Next(1, 10);
             if (chance >= 1 && chance < 10)
             {
-                Item itemUnboxed = Storage.itemRare.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemRare.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else if (chance >= 10 && chance < 60)
             {
-                Item itemUnboxed = Storage.itemEpic.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemEpic.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
             else
             {
-                Item itemUnboxed = Storage.itemMythical.ElementAt<Item>(crateSelect);
+                Item itemUnboxed = GameStorage.itemMythical.ElementAt<Item>(crateSelect);
                 Console.WriteLine($"You found a {itemUnboxed.itemRarity} item which is worth ${itemUnboxed.itemPrice}");
                 player.AddInventoryItem(itemUnboxed);
             }
